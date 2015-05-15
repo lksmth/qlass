@@ -21,5 +21,5 @@ qlass("Animals.Dog : Animal", {
 
 var fido = new Animals.Dog('Fido');
 console.log(fido.bark()); // Fido barks! - from Dog class
-console.log(walk.bark()); // Fido is walking. - from Animal class
+console.log(fido.walk()); // Fido is walking. - from Animal class
 ```
