@@ -1,0 +1,23 @@
+{
+  "name": "qlass",
+  "version": "1.0.0",
+  "description": "A classical inheritance implementation in JavaScript",
+  "main": "qlass.js",
+  "scripts": {
+    "test": "mocha -R nyan -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxygin/qlass.git"
+  },
+  "author": "Luke Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxygin/qlass/issues"
+  },
+  "homepage": "https://github.com/oxygin/qlass",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.5"
+  }
+}

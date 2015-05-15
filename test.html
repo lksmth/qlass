@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test.html</title>
+</head>
+<body>
+	<script src='/qlass.js'></script>
+	<script>
+		qlass("Animal", {
+		    Animal: function(name) { this.name = name; },
+		    walk: function() { return this.name + " is walking."; }
+		});
+		
+		qlass("Animals.Dog : Animal", {
+		    Dog: function(name) { this.base(name); },
+		    bark: function() { return this.name + " barks!"; }
+		});
+		
+		var fido = new Animals.Dog('Fido');
+		console.log(fido.bark()); // Fido barks! - from Dog class
+		console.log(fido.walk()); // Fido is walking. - from Animal class
+	</script>
+</body>
+</html>
